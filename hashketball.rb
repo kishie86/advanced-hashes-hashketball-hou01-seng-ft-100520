@@ -196,8 +196,14 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
+  shoe_tracker = 0
+  saved_player_rebounds = nil
   game_hash.each do |team_location, team|
   team[:players].each do |player_info|
+    if player_info[:shoe] > shoe_tracker
+      shoe_tracker = player_info[:shoe]
+      saved_player_rebounds = 
+    end
     player_info[:shoe]
     binding.pry
   end 

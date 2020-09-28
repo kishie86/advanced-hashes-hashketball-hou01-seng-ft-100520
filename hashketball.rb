@@ -195,10 +195,10 @@ def player_stats(player_name)
     end
 end
 
-def big_shoe_rebounds(rebounds)
+def big_shoe_rebounds
   game_hash.each do |team_location, team|
   team[:players].each do |player_info|
-    if player_info[:rebounds] == player_name
+     player_info[:rebounds]
       
     end
   end 

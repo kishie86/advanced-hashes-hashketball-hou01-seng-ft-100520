@@ -202,11 +202,9 @@ def big_shoe_rebounds
   team[:players].each do |player_info|
     if player_info[:shoe] > shoe_tracker
       shoe_tracker = player_info[:shoe]
-      saved_player_rebounds = 
+      saved_player_rebounds = player_info[:rebounds]
     end
-    player_info[:shoe]
-    binding.pry
-  end 
+  binding.pry
  end  
  
 end    

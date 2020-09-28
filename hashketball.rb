@@ -196,10 +196,9 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds(player_name)
+  binding.pry
   game_hash.each do |team_location, team|
-    binding.pry
   team[:players].each do |player_info|
-    
     if player_info[:player_name] == player_name
       
     end
